@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Counseling - Clear Your Path After 12th</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Anime.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Confused After 12th?<br /><span class="highlight"
+              >Let's Clear the Fog.</span
+            >
+          </h1>
+          <p class="hero-subtitle">
+            Book a 1-on-1 session for just <span class="price">₹100</span> and
+            get real advice.
+          </p>
+          <button class="cta-button primary" id="heroCtaBtn">
+            Start Your Journey
+          </button>
+        </div>
+        <div class="hero-3d" id="hero3d"></div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problems" class="problems-section">
+      <div class="container">
+        <h2 class="section-title">We Get It. You're Stuck.</h2>
+        <div class="problems-grid">
+          <div class="problem-card" data-problem="1">
+            <div class="problem-icon">🤔</div>
+            <h3>Too many options?</h3>
+            <p>
+              Engineering, Medical, Commerce, Arts - which path is right for
+              you?
+            </p>
+          </div>
+          <div class="problem-card" data-problem="2">
+            <div class="problem-icon">😰</div>
+            <h3>Parental pressure?</h3>
+            <p>Family expectations vs. your dreams - let's find the balance.</p>
+          </div>
+          <div class="problem-card" data-problem="3">
+            <div class="problem-icon">❓</div>
+            <h3>No clarity?</h3>
+            <p>
+              Unsure about your interests and strengths? We'll help you discover
+              them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'll Get Section -->
+    <section id="benefits" class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">What You'll Get</h2>
+        <div class="benefits-content">
+          <div class="benefits-list">
+            <div class="benefit-item" data-benefit="1">
+              <div class="benefit-icon">⏰</div>
+              <div class="benefit-text">
+                <h3>15-30 min personal call</h3>
+                <p>One-on-one focused discussion about your future</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-benefit="2">
+              <div class="benefit-icon">🗺️</div>
+              <div class="benefit-text">
+                <h3>Personal career roadmap</h3>
+                <p>Step-by-step plan tailored to your goals and situation</p>
+              </div>
+            </div>
+            <div class="benefit-item" data-benefit="3">
+              <div class="benefit-icon">💡</div>
+              <div class="benefit-text">
+                <h3>Real suggestions</h3>
+                <p>
+                  Practical advice based on current market trends and
+                  opportunities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Mentor Section -->
+    <section id="mentor" class="mentor-section">
+      <div class="container">
+        <div class="mentor-content">
+          <div class="mentor-image">
+            <div class="image-placeholder">
+              <div class="mentor-avatar">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mentor-info">
+            <h2 class="mentor-name">About Mentor</h2>
+            <p class="mentor-bio">
+              I help students find clarity after 12th using real talk and real
+              planning. With 3+ years of experience in career counseling, I've
+              guided over 100+ students to make informed decisions about their
+              future.
+            </p>
+            <div class="mentor-stats">
+              <div class="stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Students Guided</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps" class="steps-section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-timeline">
+          <div class="step" data-step="1">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Pay ₹100</h3>
+              <p>Secure your slot with a small investment in your future</p>
+            </div>
+          </div>
+          <div class="step" data-step="2">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Fill Google Form</h3>
+              <p>Share your background, interests, and concerns with us</p>
+            </div>
+          </div>
+          <div class="step" data-step="3">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Get Personal Call</h3>
+              <p>Receive your customized career guidance session</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What Students Say</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial active" data-testimonial="1">
+            <div class="testimonial-content">
+              <p>
+                "Amit sir helped me choose between engineering and design. Now
+                I'm pursuing UI/UX and loving it!"
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Priya S.</span>
+                <span class="author-location">Mumbai</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial" data-testimonial="2">
+            <div class="testimonial-content">
+              <p>
+                "I was confused between CA and MBA. The session gave me complete
+                clarity about my career path."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Rahul K.</span>
+                <span class="author-location">Delhi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial" data-testimonial="3">
+            <div class="testimonial-content">
+              <p>
+                "Best ₹100 I ever spent! Got a clear roadmap for my medical
+                entrance preparation."
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Sneha M.</span>
+                <span class="author-location">Bangalore</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is ₹100 the total cost?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, ₹100 is the complete cost for your 15-30 minute
+                personalized career counseling session. No hidden charges.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long is the counseling session?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Each session lasts 15-30 minutes, depending on your specific
+                needs and questions. We ensure you get complete clarity within
+                this time.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What if I'm not satisfied?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We're confident you'll find value in our session. However, if
+                you're not satisfied, we offer a full refund within 24 hours.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can parents join the call?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We encourage parent participation as they play a crucial role in
+                career decisions. Just mention it in the form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="final-cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Let's Talk Before You Choose Wrong</h2>
+          <p class="cta-subtitle">
+            Don't let confusion cost you your future. Get clarity today.
+          </p>
+          <button class="cta-button glow" id="finalCtaBtn">
+            Book Your Session Now - ₹100
+          </button>
+          <p class="cta-note">💡 Limited slots available this week</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Career Clarity. Helping students make informed decisions.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
